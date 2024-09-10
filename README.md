@@ -1,4 +1,4 @@
-#**Evaluating the Impact of Read Length on RNA-seq Based Differential Expression Using Galaxy and Searchlight**
+**#Evaluating the Impact of Read Length on RNA-seq Based Differential Expression Using Galaxy and Searchlight**
 
 **##Overview##**
 
