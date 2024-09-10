@@ -1,6 +1,6 @@
-**#Evaluating the Impact of Read Length on RNA-seq Based Differential Expression Using Galaxy and Searchlight**
+**Evaluating the Impact of Read Length on RNA-seq Based Differential Expression Using Galaxy and Searchlight**
 
-**##Overview##**
+**Overview**
 
 This project investigates the effect of different read lengths on RNA-seq-based differential gene expression (DGE) analysis using the Galaxy platform and Searchlight tool. The goal is to evaluate whether shorter reads like 2x59bp and 2x34bp can replace the golden standard 2x75bp paired-end reads without compromising accuracy. The study is conducted on Arabidopsis thaliana under salt stress conditions.
 **Study Highlights**
