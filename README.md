@@ -1,9 +1,9 @@
-#Evaluating the Impact of Read Length on RNA-seq Based Differential Expression Using Galaxy and Searchlight#
+**#Evaluating the Impact of Read Length on RNA-seq Based Differential Expression Using Galaxy and Searchlight#**
 
-##Overview##
+**##Overview##**
 
 This project investigates the effect of different read lengths on RNA-seq-based differential gene expression (DGE) analysis using the Galaxy platform and Searchlight tool. The goal is to evaluate whether shorter reads like 2x59bp and 2x34bp can replace the golden standard 2x75bp paired-end reads without compromising accuracy. The study is conducted on Arabidopsis thaliana under salt stress conditions.
-Study Highlights
+**Study Highlights**
 
     Organism: Arabidopsis thaliana
     Genotypes: Histone Deacetylation Complex 1 (HDC1) and Knockout (KO)
@@ -11,18 +11,18 @@ Study Highlights
     Replicates: 3 biological replicates per condition (12 samples in total)
     Accession Number: GEO GSE205893 (available publicly in June 2024)
 
-Tools Used
+**Tools Used**
 
     Galaxy: Open-source platform for RNA-seq analysis, quality control, trimming, mapping, and DGE analysis.
     Searchlight: Tool for visualizing RNA-seq data and performing downstream analysis.
     Reference Genome: Arabidopsis thaliana TAIR10.1.
 
-Objectives
+**Objectives**
 
     Evaluate whether 2x59bp and 2x34bp reads can serve as cost-effective alternatives to the golden standard 2x75bp paired-end reads.
     Assess how well single-end reads (1x75bp, 1x59bp, 1x34bp) perform in comparison to paired-end reads.
 
-Methodology
+**Methodology**
 
     Preprocessing:
         Quality control using FastQC.
@@ -37,7 +37,7 @@ Methodology
     Gene Ontology:
         Enrichment analysis using Searchlight to evaluate biological functions.
 
-Results
+**Results**
 
     PCA Analysis: PCA plots showed consistent clustering across different read lengths, suggesting minimal impact of read length on sample clustering.
 
@@ -45,15 +45,15 @@ Results
 
     Gene Ontology: The 2x59bp reads closely matched the biological functions and pathways identified with the 2x75bp reads, confirming the accuracy of shorter paired-end reads.
 
-Key Findings
+**Key Findings**
 
     2x59bp reads offer a cost-effective alternative to 2x75bp paired-end reads with no compromise in accuracy.
     Single-end reads, particularly 1x75bp, exhibited more variation and are less reliable for RNA-seq analysis compared to paired-end reads.
 
-Limitations
+**Limitations**
 
     The study is limited to a single dataset and organism (Arabidopsis thaliana). Further validation on different organisms and larger genomes is needed.
 
-Future Directions
+**Future Directions**
 
     Extend this analysis to other datasets and model organisms to confirm the generalizability of the findings.
