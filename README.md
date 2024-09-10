@@ -57,3 +57,7 @@ This project investigates the effect of different read lengths on RNA-seq-based 
 **Future Directions**
 
     Extend this analysis to other datasets and model organisms to confirm the generalizability of the findings.
+**Acknowledgments**
+
+    Supervisor: Dr. Pawel Herzyk
+    Special thanks to Dr. John Cole and Dr. David McGuinness for their support throughout this project.
