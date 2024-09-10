@@ -1,0 +1,83 @@
+
+#install.packages("eulerr")
+library(eulerr)
+
+#### Plot 1
+
+# load tables
+setwd("C:\\Users\\mahes\\Desktop\\DEG\\R\\")
+t1 = read.table("1x34_HDC1compCvsSalt.txt", sep="\t")[,1]
+t2 = read.table("1x59_HDC1compCvsSalt.txt", sep="\t")[,1]
+t3 = read.table("1x75_HDC1compCvsSalt.txt", sep="\t")[,1]
+
+# make list for venn
+venn_data = list("1x34" = t1, "1x59" = t2, "1x75" = t3)
+
+# plot venn
+ggp = plot(euler(venn_data, shape = "ellipse"), quantities = TRUE,fills = c("red", "blue", "darkgreen"), alpha=1)
+
+# save venn
+png("1x_HDC1compC_vs_HDC1compSaltcolor.png")
+print(ggp)
+dev.off()
+
+#### Plot 2
+
+# load tables
+
+setwd("C:\\Users\\mahes\\Desktop\\DEG\\R\\")
+t1 = read.table("1x34_KOCvsKOSalt.txt", sep="\t")[,1]
+t2 = read.table("1x59_KOCvsKOSalt.txt", sep="\t")[,1]
+t3 = read.table("1x75_KOCvsKOSalt.txt", sep="\t")[,1]
+
+# make list for venn
+venn_data = list("1x34" = t1, "1x59" = t2, "1x75" = t3)
+
+# plot venn
+ggp = plot(euler(venn_data, shape = "ellipse"), quantities = TRUE,fills = c("red", "blue", "darkgreen"), alpha=1)
+
+# save venn
+png("1x_KOC_vs_KOSALT_color.png")
+print(ggp)
+dev.off()
+
+#### Plot 3
+
+# load tables
+
+setwd("C:\\Users\\mahes\\Desktop\\DEG\\R\\")
+t1 = read.table("2x34_KOCvsKOSalt.txt", sep="\t")[,1]
+t2 = read.table("2x59_KOCvsKOSalt.txt", sep="\t")[,1]
+t3 = read.table("2x75_KOCvsKOSalt.txt", sep="\t")[,1]
+
+# make list for venn
+venn_data = list("2x34" = t1, "2x59" = t2, "2x75" = t3)
+
+# plot venn
+ggp = plot(euler(venn_data, shape = "ellipse"), quantities = TRUE,fills = c("red", "blue", "darkgreen"), alpha=1)
+
+# save venn
+png("2x_KOC_vs_KOSALT.png")
+print(ggp)
+dev.off()
+
+
+#### Plot 4
+
+# load tables
+
+setwd("C:\\Users\\mahes\\Desktop\\DEG\\R\\")
+t1 = read.table("2x34_HDC1compCvsSalt.txt", sep="\t")[,1]
+t2 = read.table("2x59_HDC1compCvsSalt.txt", sep="\t")[,1]
+t3 = read.table("2x75_HDC1compCvsSalt.txt", sep="\t")[,1]
+
+# make list for venn
+venn_data = list("2x34" = t1, "2x59" = t2, "2x75" = t3)
+
+# plot venn
+ggp = plot(euler(venn_data, shape = "ellipse"), quantities = TRUE,fills = c("red", "blue", "darkgreen"), alpha=1)
+
+# save venn
+png("2x_HDC1comp_vs_HDC1compSalt.png")
+print(ggp)
+dev.off()
